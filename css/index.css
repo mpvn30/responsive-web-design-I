@@ -228,6 +228,91 @@ footer{
 } */
 
 /*Media*/
+
+@media screen and (max-width: 800px){
+	.sticky{
+		display:flex;
+		flex-direction: column-reverse;
+		background-color: white;
+		align-items: center;
+	}
+	.sticky .logo{
+		padding: 25px;
+	}
+	.row1{
+		padding: 50px 45px;
+	}
+	.section1{
+		padding-top: 150px;
+		border-bottom: 2px solid black;
+	}
+	.section1 .head-img{
+		display: none;
+	}
+	.row2{
+	  border-bottom: 2px solid black;
+	  padding: 50px 45px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.sticky {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		position: static;
+	  }
+	  .sticky .nav{
+		  flex-direction: column;
+	  }
+	  .sticky .navLogo, .sticky .nav{
+		  width: 100%;
+	  }
+	  .sticky .nav a, .sticky .navLogo{
+		  width: 100%;
+		  border-bottom: 1px solid gray
+	  }
+	  .sticky .nav a{
+		  padding: 25px;
+	  }
+	  #home .section1{
+		  padding: 25px;
+	  }
+	  .section1 .head-img{
+		  display: none;
+	  }
+	  .row1, .row2{
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  
+	  }
+	  .row1 .features, .row1 .about{
+		  width: 80%;
+		  padding: 25px;
+	  }
+	  .row2{
+		  padding: 0;
+		  padding-top: 50px;
+	  }
+	  .row2 .services, .row2 .vision, .row2 .product{
+		  width: 80%;
+		  padding: 25px;
+	  }
+	  .footer{
+		  display: flex;
+		  flex-direction: column;
+		  align-items:center;
+	  }
+	  .footer .contact-info{
+		  width: 80%;
+	  }
+  
+	  .footer .copy{
+		  padding-top: 50px;
+	  }
+	}
+
 /*mobile*/
 
 @media only screen and (device-width : 375px) and (device-height : 812px) 
@@ -315,3 +400,5 @@ and (-webkit-device-pixel-ratio : 3) {
 		padding: 50px 45px;
 	  }
   }
+
+  
