@@ -189,7 +189,24 @@ p{
 }
 
 /* footer */
-.footer{
+footer{
+	font-size: 18px;
+}
+.contact-info{
+	display: flex;
+	padding: 50px 45px;
+	flex-direction: column;
+}
+
+.contact-info .number{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer .copy{
+	text-align:center;
+}
+/* .footer{
 	padding: 50px 50px;
 	line-height: 1.4;
 }
@@ -208,7 +225,7 @@ p{
 
 .footer .num{
 	margin: 15px 0 15px;
-}
+} */
 
 /*Media*/
 /*mobile*/
@@ -283,6 +300,9 @@ and (-webkit-device-pixel-ratio : 3) {
 	  .sticky .logo{
 		  padding: 25px;
 	  }
+	  .row1{
+		  padding: 50px 45px;
+	  }
 	  .section1{
 		  padding-top: 150px;
 		  border-bottom: 2px solid black;
@@ -292,5 +312,6 @@ and (-webkit-device-pixel-ratio : 3) {
 	  }
 	  .row2{
 		border-bottom: 2px solid black;
+		padding: 50px 45px;
 	  }
   }
