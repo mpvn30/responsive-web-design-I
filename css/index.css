@@ -212,12 +212,14 @@ p{
 
 /*Media*/
 /*mobile*/
-/*
-@media screen and (max-width: 415px) {
+
+@media only screen and (device-width : 375px) and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
 	.sticky {
 	  display: flex;
 	  flex-direction: column-reverse;
 	  justify-content: center;
+	  position: static;
 	}
 	.sticky .nav{
 		flex-direction: column;
@@ -225,8 +227,15 @@ p{
 	.sticky .navLogo, .sticky .nav{
 		width: 100%;
 	}
-	#home{
-		padding-top: 150px;
+	.sticky .nav a, .sticky .navLogo{
+		width: 100%;
+		border-bottom: 1px solid gray
+	}
+	.sticky .nav a{
+		padding: 25px;
+	}
+	#home .section1{
+		padding: 25px;
 	}
 	.section1 .head-img{
 		display: none;
@@ -262,7 +271,7 @@ p{
 		padding-top: 50px;
 	}
   }
-  */
+
 /* Tablet */
   @media screen and (max-width: 1024px){
 	  .sticky{
